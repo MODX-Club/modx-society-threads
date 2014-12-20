@@ -1,0 +1,50 @@
+{
+  "name": "modSocietyThread",
+  "version": "0.1.0",
+  "description": "Dynamic Threads for modSociety",
+  "main": "bundle/thread.js",
+  "scripts": {},
+  "author": "proxyfabio",
+  "license": "GPL3",
+  "dependencies": {
+    "flux": "^2.0.1",
+    "lodash": "^2.4.1",
+    "react": "^0.12.1",
+    "rsvp": "3.0.16",
+    "superagent": "^0.21.0"
+  },
+  "browserify": {
+    "transform": [
+      "browserify-shim",
+      "coffee-reactify"
+    ]
+  },
+  "browserify-shim": "./shim.js",
+  "browser": {
+    "react": "./node_modules/react/react.js"
+  },
+  "devDependencies": {
+    "browserify": "^6.3.3",
+    "browserify-shim": "^3.8.0",
+    "coffee-reactify": "^2.0.0",
+    "coffee-script": "^1.8.0",
+    "gulp": "^3.8.10",
+    "gulp-changed": "^1.0.0",
+    "gulp-jshint": "^1.9.0",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-notify": "^2.0.1",
+    "gulp-size": "^1.1.0",
+    "gulp-sourcemaps": "^1.2.8",
+    "gulp-uglifyjs": "^0.5.0",
+    "gulp-util": "^3.0.1",
+    "path": "^0.4.9",
+    "pretty-hrtime": "^0.2.2",
+    "require-dir": "^0.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.0.0",
+    "watchify": "^2.1.1"
+  },
+  "keywords": [
+    "modSociety"
+  ]
+}
